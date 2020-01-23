@@ -168,6 +168,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -183,6 +190,24 @@ img {
 }
 .navbar nav a {
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    height: 10vh;
+    justify-content: space-around;
+  }
+  .navbar h1 {
+    margin-top: 2%;
+    font-size: 3.2rem;
+  }
+  .navbar nav {
+    width: 100%;
+  }
+  .navbar nav a {
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+  }
 }
 .stretch {
   border-top: 2px dashed #C0C0C0;
@@ -204,6 +229,8 @@ img {
 }
 .home header .intro {
   margin-top: 3%;
+  padding-bottom: 1%;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -222,6 +249,17 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -234,12 +272,22 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -254,10 +302,24 @@ img {
 .home .content-pick .destination .btn {
   color: white;
   background: #17A2B8;
-  max-width: 85%;
   border-radius: 15px;
-  font-size: 2rem;
   text-align: center;
-  padding: 5% 10%;
   margin-top: 1%;
+  width: 85%;
+  padding: 5% 10%;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    width: 85%;
+    margin: 3% auto;
+  }
+  .home .content-pick .destination .btn {
+    width: 100%;
+    padding: 3% 0;
+    font-size: 1.8rem;
+  }
 }
