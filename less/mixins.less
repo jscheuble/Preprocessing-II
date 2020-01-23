@@ -1,1 +1,16 @@
 // Mixins in here
+
+.signUp() {
+    color: white;
+    background: @eastern-blue;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.grow(@width, @height) {
+    &:hover {
+        transform: scale(@width, @height);
+    }
+    
+}
