@@ -308,6 +308,10 @@ img {
   width: 85%;
   padding: 5% 10%;
   font-size: 2rem;
+  transition-duration: 300ms;
+}
+.home .content-pick .destination .btn:hover {
+  transform: scale(1.5, 1.5);
 }
 @media (max-width: 500px) {
   .home .content-pick {
